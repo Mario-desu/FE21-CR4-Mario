@@ -1,0 +1,44 @@
+let movies = `
+[
+    {
+        "movieName" : "History Food",
+        "image" : "img/history_food.png",
+        "description" : "2 children dream of time-travelling.",
+        "likes" : 0
+    },    {
+        "movieName" : "The Glemany",
+        "image" : "img/glemany.png",
+        "description" : "A true story about 2 mafia clans." ,
+        "likes" : 0
+    },    {
+        "movieName" : "Seconds",
+        "image" : "img/seconds.png",
+        "description" : "A 2011 historical drama film by John Woo.",
+        "likes" : 0
+    },    {
+        "movieName" : "Sense More Market",
+        "image" : "img/sense_more-market.png",
+        "description" : "A film about the 2008 financial crisis takes in New York.",
+        "likes" : 0
+    },    {
+        "movieName" : "Heratiker",
+        "image" : "img/heratiker.png",
+        "description" : "True story about the dramatic of soul singer Michael Everett.",
+        "likes" : 0
+    },    {
+        "movieName" : "The Ack of the Races",
+        "image" : "img/ack_of_races.png",
+        "description" : "Stranger offers to punish teacher's wife's attacker.",
+        "likes" : 0
+    },{
+        "movieName" : "The Empty Die",
+        "image" : "img/empty_die.png",
+        "description" : "Liz is a cruising the streets of New York as a limousine chauffeur.",
+        "likes" : 0
+    },{
+        "movieName" : "The Reaction",
+        "image" : "img/reaction.png",
+        "description" : "A psycho-thriller about a fortune-teller destroying people's life.",
+        "likes" : 0
+    }]
+`
