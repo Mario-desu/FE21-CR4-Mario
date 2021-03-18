@@ -2,8 +2,13 @@ let movieData = JSON.parse(movies);
 
 console.table(movieData);
 
+// const sortLikes = document.getElementById("moviesSort");
+// sortLikes.addEventListener("click", sortMovies);
 
-for (i in movieData) {
+// function sortMovies() {
+//   movieData.sort((a, b) => b.likes - a.likes);}
+
+for (let i in movieData) {
     
     
 
@@ -19,8 +24,8 @@ for (i in movieData) {
                         <h5 class="card-title">${movieData[i].movieName}</h5>
                         <p class="card-text">${movieData[i].description}</p>
                         <div class="card-footer">
-                            <button class="btn btn-success" id="like-btn" type="button"}>Like &#128077</button>
-                            <span id="dotResult">0</span>
+                            <button${i} class="btn btn-success click-button">Like &#128077</button>
+                            <span${i} class="dotResult">0</span>
                         </div>
                     </div>
                 </div>
@@ -36,29 +41,29 @@ The other approach just works for the first card.
 
 
 
-    var button = document.getElementById("like-btn"),
-        count = 0;
-        button.onclick = function() {
-        count += 1;
-    document.getElementById("dotResult").innerHTML = "Likes: " + count;
-  };
+//     var button = document.getElementById("like-btn"),
+//         count = 0;
+//         button.onclick = function() {
+//         count += 1;
+//     document.getElementById("dotResult").innerHTML = "Likes: " + count;
+//   };
   
-}
-//     const clickBtn = document.querySelectorAll("button");
-    // console.log(btn);
-//     for (let j in clickBtn){        
-//         function clickLike () {
-//             let inputNumber = document.getElementById("dotResult" + [i]);
-//             let dataCounter = movieData[i].likes += 1;
-//             // console.log(dataCounter)
-//             inputNumber.innerHTML = dataCounter;
-//         };
-//     }
-//     clickBtn[i].addEventListener("click", clickLike);
-
-// console.log(clickBtn);
-
 // }
+    const clickBtn = document.querySelectorAll("button");
+    
+    for (let j=0; j < clickBtn.length; j++){        
+        function clickLike () {
+            let inputNumber = document.getElementsByClassName("dotResult")[j];
+            let dataCounter = (number(movieData[j].likes) += 1);
+            console.log(dataCounter)
+            inputNumber.innerHTML = dataCounter;
+        };
+    }
+    clickBtn.addEventListener("click", clickLike);
+
+console.log(clickBtn);
+
+}
 
 
 
