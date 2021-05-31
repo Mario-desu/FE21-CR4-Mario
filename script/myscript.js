@@ -18,7 +18,7 @@ for (i = 0; i < movieData.length; i++) {
 
     document.getElementById("card-wrapper").innerHTML += `
     <div class="col">
-        <div class="card shadow rounded">
+        <div class="card h-100 shadow rounded">
             <div class="row g-0">
                 <div class="col-md-4">
                 <img src="${movieData[i].image}" class="img-fluid rounded" alt="Movie poster">
@@ -30,8 +30,8 @@ for (i = 0; i < movieData.length; i++) {
                     </div>
                     <div class="card-footer likeBtn" id="randCard${[i]}">
                     
-                    <btn class="likeCount btn btn-primary rounded-circle disabled">${movieData[i].likes} *</btn><br><br>
-                </div>
+                    <btn class="likeCount btn btn-primary rounded-circle disabled">${movieData[i].likes}*</btn><br><br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ function btnLikes() {
       bcount[i].addEventListener("click", addLike);
       function addLike() {
         let up = parseInt(movieData[i].likes) + 1;
-        countTarget[i].innerHTML = up + " *";
+        countTarget[i].innerHTML = up + "*";
         console.log(up);
         movieData[i].likes = up;
 
