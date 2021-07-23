@@ -1,3 +1,8 @@
+"use strict";
+
+// Error in myjson.json: "Expected a JSON object, array or literal.json", weil es als JSOn gespeichert ist
+
+
 let movieData = JSON.parse(movies);
 
 console.table(movieData);
@@ -12,7 +17,7 @@ console.table(movieData);
 
 function displayCards(){
 
-for (i = 0; i < movieData.length; i++) {
+for (let i = 0; i < movieData.length; i++) {
     
     
 
